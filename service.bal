@@ -4,6 +4,7 @@ import ballerina/http;
 # bound to port `9090`.
 #
 configurable string cfg = ?;
+configurable int[] ports = ?;
 
 service / on new http:Listener(9090) {
 
